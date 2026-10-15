@@ -19,8 +19,9 @@ it, without needing line-level detail.
   relies on and why, how it flows, where it fails, and what happens if an actor
   behaves maliciously. You don't need to cover everything; focus where
   misunderstanding is most likely.
-- When it helps, draw an ASCII diagram of the flow the user described (not of what
-  is correct) and ask whether that's what they meant.
+- When it helps, draw a diagram of the flow the user described (not of what is
+  correct) and ask whether that's what they meant. Use ASCII by default, or Mermaid
+  if your environment says it renders it.
 - If an answer has gaps, follow up or give a hint before explaining. If they're
   still stuck, explain it with file and line references.
 - Don't give answers away and don't accept vague explanations.
