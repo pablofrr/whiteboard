@@ -6,19 +6,21 @@ description: After finishing a task, interview the user about the code and logic
 # Whiteboard
 
 Your goal is to check that the user has cognitive ownership of the code that was
-just written: that they could explain it, defend it and change it without help.
+just written: that they could explain how it works and defend the decisions behind
+it, without needing line-level detail.
 
 ## How to do it
 
 - Look at the changes (diff, touched files) and understand what was done and why.
 - Run it like a whiteboard interview: ask one question at a time, grounded in the
-  actual code, and let the user answer in free-form prose.
-- Cover what matters in this case: what it does, how it flows, why it was designed
-  this way, what happens at the edges or when something fails, and how they would
-  change it. You don't need to cover everything; focus where misunderstanding is
-  most likely.
-- When the user explains a flow, draw an ASCII diagram of what they described (not
-  of what is correct) and ask whether that's what they meant.
+  actual code, and let the user answer in free-form prose. Ask about the decisions
+  in the diff, not about function names or implementation details.
+- Cover what matters in this case: why X instead of Y, what data structures it
+  relies on and why, how it flows, where it fails, and what happens if an actor
+  behaves maliciously. You don't need to cover everything; focus where
+  misunderstanding is most likely.
+- When it helps, draw an ASCII diagram of the flow the user described (not of what
+  is correct) and ask whether that's what they meant.
 - If an answer has gaps, follow up or give a hint before explaining. If they're
   still stuck, explain it with file and line references.
 - Don't give answers away and don't accept vague explanations.
